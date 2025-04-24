@@ -1,0 +1,15 @@
+{
+  "name": "obsidian-markdown-viewer",
+  "version": "1.0.0",
+  "description": "Chrome/Edge extension for rendering Obsidian Markdown notes with enhanced features.",
+  "scripts": {
+    "build": "echo No build step required for plain JS extension.",
+    "package": "node scripts/package.js",
+    "clean": "node scripts/clean.js",
+    "bump-version": "npm version patch --no-git-tag-version",
+    "changelog": "node scripts/changelog.js",
+    "publish": "npm run bump-version && npm run changelog && npm run package && echo Ready to publish. Upload the zip to the Chrome Web Store or Edge Add-ons."
+  },
+  "author": "",
+  "license": "MIT"
+}
